@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Banner, header, logo, and navigation -->
+
+<body>
+    <section class="banner" role="banner">
+        <a class="skip-to-content-link" href="#main">Skip to main content</a>
+        <nav>
+            <a href="index.html"><img src="images/WebLogo.png" alt="weblogo"></a>
+            <div class="nav" role="navigation">
+                <ul>
+                    <li><a href="index.html" tabindex="1">Home</a></li>
+                    <li><a href="about.html" tabindex="2">About</a></li>
+                    <li><a href="contact.html" tabindex="3">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text" role="text">
+            <h1>CONTACT</h1>
+        </div>
+    </section>
+
+    <!-- Adding contact form to contact page -->
+
+    <section class="contact">
+        <div class="c-col">
+            <form action="">
+                <h4>Name</h4>
+                <input type="text" placeholder="Your Name" required tabindex="4">
+                <h4>Email/Phone</h4>
+                <input type="text" placeholder="Email Or Phone Number" required tabindex="5">
+                <h4>Subject</h4>
+                <textarea rows="10" placeholder="Message" required tabindex="6"></textarea>
+            </form>
+            <button type=Submit class="button a-button" tabindex="7">Send</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <br>
+        <br>
+        <br>
+        <p>Copyright &copy; Maxim Simonov 2023</p>
+    </section>
+
+</body>
+
+</html>

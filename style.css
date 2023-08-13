@@ -1,0 +1,723 @@
+/* Style for whole website */
+* {
+    font-family: 'Segoe UI';
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* ==========================================================
+========================== HOME =============================
+========================================================== */
+
+
+
+/* Allows background/banner to be same color for whole page */
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #33000d;
+}
+
+/* navigation sizing */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 6%;
+}
+
+/* logo sizing */
+nav img {
+    width: 160px;
+}
+
+/* moves navigation to the right */
+.nav {
+    text-align: right;
+    flex: 1;
+}
+
+/* removes bullet points and makes nav horizontal */
+.nav ul li {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 5px 12px;
+}
+
+/* Change color and remove underline */
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+/* Creating transition for highlight under navigation options */
+.nav ul li::after {
+    display: block;
+    margin: auto;
+    background: teal;
+    width: 0%;
+    height: 4px;
+    content: '';
+    transition: 0.75s;
+}
+
+/* Allows highlight under navigation options to appear */
+.nav ul li:hover::after {
+    width: 100%;
+}
+
+/* centers all content and changes color */
+.text {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+}
+
+/* Header size */
+.text h1 {
+    font-size: 150px;
+}
+
+/* paragraph font size and space between header and button */
+.text p {
+    margin: 32px 0 22px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Styling button */
+.button {
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    padding: 24px 56px;
+    border: 1px solid white;
+}
+
+/* Color change animation when hover on button */
+.button:hover {
+    border: 1px teal;
+    background: teal;
+    transition: 1.2s;
+}
+
+
+
+/* ==========================================================
+=================== SERVICES + PORTFOLIO ====================
+===========================================================*/
+
+
+
+/* Styling title */
+.portfolios {
+    text-align: center;
+    margin: auto;
+    padding-top: 100px;
+    width: 80%;
+}
+
+/* Styling Header */
+.portfolios h1 {
+    font-size: 35px;
+    padding-bottom: 100px;
+}
+
+/* Styling image placement and shape */
+.p-col {
+    position: relative;
+    overflow: hidden;
+    flex-basis: 30%;
+}
+
+/* Styling images */
+.p-col img {
+    border-radius: 20px;
+    width: 100%;
+    height: 46%;
+    opacity: 90%;
+}
+
+/* Initializing first step to transition/animation for hover action */
+.p-txt {
+    border-radius: 20px;
+    width: 100%;
+    height: 46%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: transparent;
+    transition: 0.75s;
+}
+
+/* Adding contrast color layer on hover for clarity */
+.p-txt:hover {
+    background: #33000d;
+    opacity: 75%;
+}
+
+/* Creating and styling text that appears on hover (h3) */
+.p-txt h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: 0.75s;
+    opacity: 0;
+}
+
+.p-txt:hover h3 {
+    bottom: 20%;
+    opacity: 1;
+}
+
+.p-txt p {
+    font-size: 15px;
+}
+
+.p-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* ===========================================================
+================ PORTFOLIO + SERVICES BUTTON =================
+=========================================================== */
+
+
+/* Styling button used on each service and portfolio */
+.page {
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    display: inline-block;
+    padding: 125px 180px;
+    border: 3px solid teal;
+    border-radius: 20px;
+}
+
+
+
+/*============================================================
+ ======================== SKIP LINK ==========================
+ ========================================================== */
+
+
+/* styling skip link */
+.skip-to-content-link {
+    height: 20px;
+    background: #ffffff;
+    padding: 12px;
+    position: absolute;
+}
+
+
+
+/* ===========================================================
+============================ ABOUT ===========================
+=========================================================== */
+
+
+
+/* Adds Banner/header background image with text color and gradient for contrast */
+.banner {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    background-color: #33000d;
+}
+
+/* Styling the fitment of the about information */
+.about {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    margin: auto;
+    width: 90%;
+}
+
+/* Spacing/styling about information */
+.a-col {
+    padding: 40px 10px;
+    flex-basis: 50;
+}
+
+.a-col img {
+    width: 100%;
+}
+
+/* Styling about header */
+.a-col h1 {
+    padding-top: 0;
+    font-size: 32px;
+}
+
+/* Styling about paragraph */
+.a-col p {
+    padding: 20px 0 30px;
+}
+
+/* Adds Visibility to Button */
+.a-button {
+    background: transparent;
+    border: 1px solid teal;
+    color: teal;
+}
+
+/* Allows button to visibly say read more on hover by changing text color */
+.a-button:hover {
+    color: white;
+}
+
+
+
+/* ========================================================
+======================== CONTACT ==========================
+======================================================== */
+
+
+
+/* Styling Contact form inputs and textarea */
+.c-col input,
+.c-col textarea {
+    border-radius: 15px;
+    padding: 20px;
+    width: 50%;
+    margin-bottom: 25px;
+    border: 1px solid rgb(79, 91, 91);
+    outline: none;
+    justify-content: center;
+}
+
+/* Centering Contact form */
+.contact {
+    padding-top: 60px;
+    margin-left: 34%;
+    margin-right: 20%;
+    width: 60%;
+}
+
+/* Styling text above each input */
+h4 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/* ==============================================================
+========================== FOOTER ===============================
+============================================================== */
+
+
+/* Styling footer */
+.footer {
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling font for footer */
+.footer h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/* ==================================================
+==================== MY PHOTOS ======================
+================================================== */
+
+
+/* Centers all content */
+.photoservice {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+}
+
+/* Heading size */
+.photoservice h1 {
+    font-size: 100px;
+}
+
+/* text size, color, spacing */
+.photoservice p {
+    margin: 32px 0 22px;
+    font-size: 18px;
+    color: white;
+}
+
+/* Creating margin and spacing */
+.box {
+    margin: 60px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Styling photos */
+.box .photo-col {
+    flex-direction: column;
+    display: flex;
+    width: 32.5%;
+}
+
+/* Styling photos and spacing */
+.box .photo-col img {
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+
+/* ==================================================
+================ WHAT I PROVIDE =====================
+================================================== */
+
+
+/* centers all content */
+.provide {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+}
+
+/* header size */
+.provide h1 {
+    font-size: 100px;
+}
+
+/* paragraph font size and space between header and button */
+.provide p {
+    margin: 32px 0 22px;
+    font-size: 18px;
+    color: white;
+}
+
+#services {
+    padding: 30px 0;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* creating grid */
+.services-list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+/* styling content */
+.services-list div {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    background: teal;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/* styling text */
+.services-list p {
+    color: white;
+    padding: 8px;
+}
+
+/* styling "link" */
+.services-list a {
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* styling header */
+#services h1 {
+    font-size: 46px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* styling icons */
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* styling hover animation */
+.services-list div:hover {
+    background-color: #4e1725;
+    transform: translateY(-10px);
+}
+
+
+
+/* ==================================================
+================ PACKAGE DEALS ======================
+================================================== */
+
+
+/* centers all content */
+.deals {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+    top: 60%;
+    left: 50%;
+}
+
+/* heading size */
+.deals h1 {
+    font-size: 100px;
+}
+
+/* paragraph font size and space between header and button */
+.deals p {
+    margin: 32px 0 22px;
+    font-size: 18px;
+    color: white;
+}
+
+#packages {
+    padding: 30px 0;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+/* creating grid */
+.package-deals {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+
+/* styling content */
+.package-deals div {
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    background: teal;
+    transition: background 0.5s, transform 0.5s;
+}
+
+/* styling text */
+.package-deals p {
+    color: white;
+    padding: 8px;
+}
+
+/* styling "link" */
+.package-deals a {
+    color: black;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* styling header */
+#packages h1 {
+    font-size: 46px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+/* styling animation */
+.package-deals div:hover {
+    background-color: #4e1725;
+    transform: translateY(-10px);
+}
+
+/* ==================================================
+=================== MEDIA QUERY =====================
+================================================== */
+
+
+
+@media(max-width: 700px) {
+
+    * {
+        align-items: center;
+    }
+
+    .photoservice h1 {
+        font-size: 40px;
+    }
+
+    .photoservice p {
+        font-size: 10px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .box .photo-col {
+        width: 100%;
+    }
+
+    .text {
+        color: white;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+        top: 60%;
+        left: 50%;
+    }
+
+    .nav {
+        text-align: right;
+        flex: 1;
+    }
+
+    .p-txt {
+        border-radius: 20px;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: transparent;
+        transition: 0.75s;
+        margin-left: 32px;
+    }
+
+    .p-col {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .p-col img {
+        border-radius: 20px;
+        width: 80%;
+        height: 46%;
+        opacity: 90%;
+    }
+
+    .p-txt h3 {
+        color: white;
+        font-size: 30px;
+        font-weight: 600;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        position: absolute;
+        transform: translateX(-50%);
+        transition: 0.75s;
+        opacity: 0;
+    }
+
+    .p-txt:hover h3 {
+        bottom: 40%;
+        opacity: 1;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .p-row {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        justify-content: space-between;
+        display: inline-block;
+        position: relative;
+        text-align: right;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .text p {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    .contact h4 {
+        font-size: 20px;
+    }
+
+    .p-row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav img {
+        width: 75px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10% 9%;
+    }
+
+    .skip-to-content-link {
+        height: 15px;
+        background: #ffffff;
+        padding: 8px;
+        position: absolute;
+    }
+
+    .portfolios {
+        text-align: center;
+        margin: auto;
+        padding-top: 75px;
+        width: 80%;
+    }
+
+    .portfolios h1 {
+        font-size: 24px;
+        padding-bottom: 75px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
